@@ -1,0 +1,112 @@
+:root {
+  --marginSize: 2rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Space Mono", monospace;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-family: "Inconsolata", monospace;
+  color: #333333;
+}
+
+.bigText {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #333333;
+  margin: var(--marginSize);
+}
+
+section p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #333333;
+  margin: var(--marginSize);
+}
+
+button {
+  font-weight: 700;
+  font-size: 0.875rem;
+  font-variant-caps: all-petite-caps;
+  color: #ffffff;
+  padding: 1.5rem;
+  border: none;
+  background-color: #333333;
+  margin: var(--marginSize);
+}
+
+.infoSection {
+  height: 60vh;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .bigText {
+    font-size: 3.5rem;
+  }
+
+  section p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .bigText {
+    font-size: 3rem;
+  }
+
+  section p {
+    font-size: 1.2rem;
+  }
+
+  .infoSection {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bigText {
+    font-size: 2.5rem;
+  }
+
+  .infoSection {
+    width: 90vw;
+  }
+
+  section p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    display: block;
+  }
+
+  .bigText {
+    font-size: 2rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .infoSection {
+    width: 95vw;
+  }
+}
